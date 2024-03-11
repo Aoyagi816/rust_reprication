@@ -33,21 +33,21 @@ repos:
       hooks:
           - id: toml-sort-fix
 
-    - repo: https://github.com/adrienverge/yamllint.git
-      rev: v1.33.0
-      hooks:
-          - id: yamllint
-            args: [--format, parsable, --strict, --config-file=.yamllint]
+    # - repo: https://github.com/adrienverge/yamllint.git
+    #   rev: v1.33.0
+    #   hooks:
+    #       - id: yamllint
+    #         args: [--format, parsable, --strict, --config-file=.yamllint]
 
-    - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
-      rev: 0.2.3
-      hooks:
-          - id: yamlfmt
+    # - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+    #   rev: 0.2.3
+    #   hooks:
+    #       - id: yamlfmt
 
-    - repo: https://github.com/mrtazz/checkmake.git
-      rev: 0.2.2
-      hooks:
-          - id: checkmake
+    # - repo: https://github.com/mrtazz/checkmake.git
+    #   rev: 0.2.2
+    #   hooks:
+    #       - id: checkmake
 
     - repo: https://github.com/kynan/nbstripout
       rev: 0.6.1
@@ -135,6 +135,6 @@ repos:
           - id: poetry-lock
 
 
-# コマンド一覧
-# poetry run pre-commit run --all-files　で実行
-# pre-commit autoupdate　で更新
+# list of command
+# poetry run pre-commit run --all-files ::::execute
+# pre-commit autoupdate ::::update

@@ -9,20 +9,20 @@ max-complexity = 20
 [tool.nbqa.addopts]
 flake8 = ["--max-line-length=120"]
 
-
 [tool.poetry]
 name = "rust-reprication"
 version = "0.1.0"
 description = ""
 authors = ["Aoyagi816 <hiro8trees@yahoo.co.jp>"]
 readme = "README.md"
-packages = [{ include = "rust_reprication" }]
+packages = [{include = "rust_reprication"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 pandas = "^2.2.1"
 numpy = "^1.26.4"
-
+ipykernel = "^6.29.3"
+openpyxl = "^3.1.2"
 
 [tool.poetry.group.complexity.dependencies]
 radon = "^6.0.1"
@@ -60,4 +60,4 @@ addopts = ["--cov --cov-report=term --cov-report=xml --cov-report=html"]
 extends = "default"
 
 [tool.yamllint.rules]
-line-length = { max = 120 }
+line-length = {max = 120}
